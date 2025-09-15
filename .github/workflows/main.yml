@@ -50,7 +50,7 @@ jobs:
       - name: Connect Tailscale
         shell: pwsh
         run: |
-          $env:kErR5Ys6eA11CNTRL = "${{ secrets.TAILSCALE_AUTH_KEY }}"
+          $env:kErR5Ys6eA11CNTRL = "${{ secrets.TAILSCAL_AUTH_KEY }}"
           tailscale up --authkey $env:TS_KEY --accept-routes --accept-dns=false
           tailscale ip -4
           Write-Host "✅ Connected to Tailscale network."
